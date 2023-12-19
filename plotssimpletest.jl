@@ -1,7 +1,8 @@
 using Plots
 
-#y = randn(10)
-y=
-plot(y)
+x = range(0, 10, length=100)
+y = sin.(x)
+plot(x, y)
 
-savefig("testfig.png")
+#gui()~
+savefig("jltestfig.png")

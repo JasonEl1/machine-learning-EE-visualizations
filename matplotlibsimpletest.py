@@ -1,9 +1,9 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
 
+x = np.linspace(0,10,100)
+y = np.sin(x)
 
-xpoints = np.array([1, 2, 6, 8])
-ypoints = np.array([3, 8, 1, 10])
-
-pyplot.plot(xpoints, ypoints)
+pyplot.plot(x,y)
+pyplot.savefig("pytestfig.png")
 pyplot.show()
