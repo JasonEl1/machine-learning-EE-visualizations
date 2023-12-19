@@ -1,6 +1,5 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
-import random
 
 noise = 0.3*np.random.randn(100)
 m = 0.3
