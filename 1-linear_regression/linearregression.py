@@ -11,5 +11,5 @@ y = m*x+b+noise
 pyplot.scatter(x,y)
 pyplot.plot(x,m*x+b,linewidth=2,color='red')
 pyplot.margins(x=0.1,y=0.1)
-pyplot.savefig("linear_regression\pylinearregression.png")
+pyplot.savefig("1-linear_regression\pylinearregression.png")
 pyplot.show()

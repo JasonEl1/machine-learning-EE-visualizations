@@ -16,5 +16,5 @@ create_plot_and_noise(0.15,7,0.4)
 create_plot_and_noise(0.1,6,0.3)
 
 pyplot.margins(x=0.1,y=0.1)
-pyplot.savefig("multiple_linear_regression\pymultiple_linearregression.png")
+pyplot.savefig("2-multiple_linear_regression\\pymultiple_linearregression.png")
 pyplot.show()

@@ -4,6 +4,6 @@ using Plots
 f(x) = sin.(x)
 plot(f,0,10)
 
-savefig("jltestfig.png")
+savefig("0-simple_test\\jltestfig.png")
 display(Plots.plot!())
 sleep(10)

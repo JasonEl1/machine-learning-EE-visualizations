@@ -1,5 +1,7 @@
 using Plots
 
+default(framestyle=:box,grid=false,legend=false)
+
 function create_plot_and_noise(m,b,noise)
     linear_function(x) = m*x.+b
 
@@ -15,7 +17,7 @@ create_plot_and_noise(0.3,5,0.3)
 create_plot_and_noise(0.15,7,0.4)
 create_plot_and_noise(0.1,6,0.3)
 
-savefig("multiple_linear_regression\\jlmultiple_linearregression.png")
+savefig("2-multiple_linear_regression\\jlmultiple_linearregression.png")
 display(Plots.plot!())
 wait()
-exit()
+exit()create_plot_and_noise(0.15,7,0.4)
