@@ -14,3 +14,7 @@ import Pkg
 Pkg.add("Plots")
 ```
 The above commands are only necessary to install the Plots library. After installing, import it into your julia program with `using Plots`.
+
+***
+
+`runall.py` executes all other python scripts in each subfolder.
