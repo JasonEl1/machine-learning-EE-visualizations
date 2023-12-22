@@ -6,4 +6,5 @@ plot(f,0,10)
 
 savefig("0-simple_test\\jltestfig.png")
 display(Plots.plot!())
-sleep(10)
+wait()
+exit(0)
