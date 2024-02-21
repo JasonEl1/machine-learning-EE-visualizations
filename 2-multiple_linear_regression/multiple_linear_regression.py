@@ -1,5 +1,7 @@
 import matplotlib.pyplot as pyplot
 import numpy as np
+import os
+from datetime import datetime
 
 def create_plot_and_noise(m,b,noise_coeff):
     noise = noise_coeff*np.random.randn(100)
@@ -16,5 +18,8 @@ create_plot_and_noise(0.15,7,0.4)
 create_plot_and_noise(0.1,6,0.3)
 
 pyplot.margins(x=0.1,y=0.1)
-pyplot.savefig("2-multiple_linear_regression\\pymultiple_linearregression.png")
+if os.name=="nt":
+    pyplot.savefig(f"plot{datetime.timestamp(datetime.now())}.png")
+else:
+    pyplot.savefig(f"plot{datetime.timestamp(datetime.now())}.png")
 pyplot.show()
