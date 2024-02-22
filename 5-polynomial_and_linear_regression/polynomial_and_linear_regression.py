@@ -8,11 +8,9 @@ linear_y = 0.3*x+1.5
 polynomial_y = -0.1*pow((x-6),2)+4
 polynomial_y_noise = polynomial_y + 0.3*(np.random.randn(100))
 
-pyplot.plot(x,linear_y,color='r')
-pyplot.plot(x,polynomial_y,color='b')
+pyplot.plot(x,linear_y,color='r', label='linear regression')
+pyplot.plot(x,polynomial_y,color='b', label='polynomial regression')
+pyplot.legend()
 pyplot.scatter(x,polynomial_y_noise)
-if os.name=="nt":
-    pyplot.savefig(f"plot{datetime.timestamp(datetime.now())}.png")
-else:
-    pyplot.savefig(f"plot{datetime.timestamp(datetime.now())}.png")
+pyplot.savefig(f"plot{datetime.timestamp(datetime.now())}.png")
 pyplot.show()
